@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/montana"
+    tools:context=".ShoppingHome">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFlies"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#4D000000"
+                android:text="Flies"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/svFlies"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#000000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llAdams"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <Button
+                            android:id="@+id/btnAdams"
+                            android:layout_width="65dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/adams"
+                            app:srcCompat="@drawable/blue_winged_olive" />
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Adams Parachute Dry Fly"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice1"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $11.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCaddis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk Hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice2"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMidge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/zebra_midge" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription2"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Zebra Midge"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice3"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="9 for $17.95"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llStoneFly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/stonefly" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription4"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Tunnghead Stonefly"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice4"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llBlueWingedOlive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/blue_winged_olive" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription5"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Blue Winged Olive"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice5"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="6 for $5.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHaresEarNymph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/hares_ear_nymph" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription6"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Hare's Ear Nymph"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice6"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="3 for $2.75"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHendrickson"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/hendrickson" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription7"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Hendrickson"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice7"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="6 for $8.00"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSquirminator"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/squirminator_jig" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription8"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Squirminator Jig"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice8"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.50"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWoolyBugger"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/wooly_bugger" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription9"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Wolly Bugger"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice9"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llClouserMinow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/clouser_minow" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription10"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Clouser Minow"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice10"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="6 for $11.95"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtFlyLine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#4D000000"
+                android:paddingTop="20dp"
+                android:text="Fly Line / Leader / Tippet"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/svFlyLine"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#000000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice11"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription12"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice12"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription13"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice13"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription14"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice14"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription15"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice15"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription16"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice16"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription17"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice17"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription18"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice18"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription19"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice19"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription20"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice20"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtFlyRodsandReels"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#4D000000"
+                android:paddingTop="20dp"
+                android:text="Rods and Reels"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/svFlyRodsandReels"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#000000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice21"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription22"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice22"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription23"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice23"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription24"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice24"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription25"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice25"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription26"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice26"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription27"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice27"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription28"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice28"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView29"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription29"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice29"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView30"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription30"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice30"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtGearandAccessories"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#4D000000"
+                android:paddingTop="20dp"
+                android:text="Gear and Accessories"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/svGearandAccessories"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#000000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice31"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription32"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice32"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView33"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription33"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice33"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView34"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription34"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice34"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView35"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription35"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice35"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView36"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription36"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice36"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView37"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription37"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice37"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView38"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription38"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice38"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView39"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription39"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice39"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView40"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            app:srcCompat="@drawable/elk_hair_caddis" />
+
+                        <TextView
+                            android:id="@+id/txtProductDescription40"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="Elk hair Caddis"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/txtPrice40"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:text="12 for $8.99"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+            <TextView
+                android:id="@+id/txtMeppsSpinners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mepps" />
+
+            <HorizontalScrollView
+                android:id="@+id/svMeppsSpinners"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtPantherMartinSpinners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panther Martin Spinners" />
+
+            <HorizontalScrollView
+                android:id="@+id/svPantherMartinSpinners"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtBlueFox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blue Fox Spinners" />
+
+            <HorizontalScrollView
+                android:id="@+id/svBlueFoxSpinners"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtRapala"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Rapala Products" />
+
+            <HorizontalScrollView
+                android:id="@+id/svRapala"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtFlyRods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fly Rods" />
+
+            <HorizontalScrollView
+                android:id="@+id/svFlyRods"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtFlyReels"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Fly Reels" />
+
+            <HorizontalScrollView
+                android:id="@+id/svFlyReels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

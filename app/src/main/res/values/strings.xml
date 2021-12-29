@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FishingOnTheFly</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_river_maps">Map</string>
+</resources>

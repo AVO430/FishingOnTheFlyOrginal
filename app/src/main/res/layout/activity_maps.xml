@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="622dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llNavigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtSearchBar"
+                android:layout_width="206dp"
+                android:layout_height="match_parent"
+                android:background="#BF323131"
+                android:ems="10"
+                android:hint="Search Rivers Near You"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_menu_search"
+                android:paddingLeft="37dp" />
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:background="#BF323131"
+                android:paddingLeft="10dp"
+                android:text="Elevation View"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="576dp"
+            tools:context=".MapsActivity" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollWildStreamInfo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWildTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtNjWild"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="NJ WILD TROUT STREAM"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtWildBackground"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/brooktrout"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/txtWildDescription"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <TextView
+                android:id="@+id/txtSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:text="Wild Trout Species: "
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/svSelectedRiver"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/llVertical2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtClickedRiverTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Clicked River Title"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtClickedRiverBackground"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/flatbrook_info_background"
+                android:gravity="center|top"
+                android:paddingBottom="15dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtFishingConditions"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Live Fishing Conditions"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/llFishingConditionInfo"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llRiverLevel"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtRiverLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="River Level"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    <TextView
+                        android:id="@+id/txtLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:gravity="bottom|center"
+                        android:text="100"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRiverTemp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtRiverTemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Temp"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    <TextView
+                        android:id="@+id/txtTemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:gravity="bottom|center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRiverChangeRate"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtRiverChangeRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rate of Change"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    <TextView
+                        android:id="@+id/txtChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:gravity="bottom|center"
+                        android:text="100"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llYearlyAverage"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtYearlyAverage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Yearly Aveerage"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    <TextView
+                        android:id="@+id/txtAverage"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:gravity="bottom|center"
+                        android:text="100"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCondition"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Condition"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    <TextView
+                        android:id="@+id/txtConditionValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:gravity="bottom|center"
+                        android:text="Good"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtTroutSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|top"
+                android:paddingBottom="10dp"
+                android:text="Trout Species"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/llTroutSpeciesImages"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtRainbowTroutImage"
+                    android:layout_width="120dp"
+                    android:layout_height="105dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rainbow" />
+
+                <TextView
+                    android:id="@+id/txtBrownTroutImage"
+                    android:layout_width="120dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/brown_trout" />
+
+                <TextView
+                    android:id="@+id/txtBrookTroutImage"
+                    android:layout_width="120dp"
+                    android:layout_height="105dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/brook_trout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTroutSpeciesInfo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="top|left"
+                    android:text="Rainbow Trout (Stocked)"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brown Torut (Wild/Native)"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Brook Trout(Wild/Native)"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtSeasonalFlyHatch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:text="Seasonal Fly Hatches"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/llFlyHatch"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFlyImage"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/blue_olive" />
+
+                    <TextView
+                        android:id="@+id/txtFlyNameOne"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Blue Winged Olive"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFlyImage2"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/midge" />
+
+                    <TextView
+                        android:id="@+id/txtFlyName2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Midge"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFlyImage3"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/black_cadis" />
+
+                    <TextView
+                        android:id="@+id/txtFlyName3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Black Cadis"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFlyImage4"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/hendrickson" />
+
+                    <TextView
+                        android:id="@+id/txtFlyName4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Hendrickson"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFlyImage5"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/quill_gordon" />
+
+                    <TextView
+                        android:id="@+id/txtFlyName5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Quill Gordon"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFlyImage6"
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/march_brown" />
+
+                    <TextView
+                        android:id="@+id/txtFlyName6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="March Brown"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRiversNearby"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:text="Other Rivers Nearby"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnMuskie"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/muskie"
+                            android:paddingRight="@android:dimen/app_icon_size" />
+
+                        <TextView
+                            android:id="@+id/txtMuskieButtonText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="Muskie"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnSouthBranch"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/raritan" />
+
+                        <TextView
+                            android:id="@+id/txtSouthBranchButtonText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Raritan River South Branch"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/paulinskill" />
+
+                        <TextView
+                            android:id="@+id/txtPequestButtonText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paulinskill River"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txttest2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Purchase Gear"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnflies"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/trout_fly2"
+                            android:paddingRight="@android:dimen/app_icon_size" />
+
+                        <TextView
+                            android:id="@+id/other4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="Flies"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnSpinners"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/trout_spinner2" />
+
+                        <TextView
+                            android:id="@+id/other2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Spinners"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/fly_tippet" />
+
+                        <TextView
+                            android:id="@+id/other1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tippet"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnLeader"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/fly_leader"
+                            android:paddingRight="@android:dimen/app_icon_size" />
+
+                        <TextView
+                            android:id="@+id/other7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="Leader"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnPhoebes"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/phoebe"
+                            android:paddingRight="@android:dimen/app_icon_size" />
+
+                        <TextView
+                            android:id="@+id/other8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="Phoebes"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btnShop"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:gravity="right"
+                android:text="Browse Flies and Gear"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Fishing on the Fly"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/llMapKey"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtTextView23"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingTop="3dp"
+                android:text="Trout Stocked Water"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="#0000ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingTop="3dp"
+                android:text="Trout Conservation Areas"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="#83F52C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingTop="3dp"
+                android:text="Wild Trout Streams"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="#9400D3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingTop="3dp"
+                android:text="Holdover Trout Lakes"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="#FF0000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
